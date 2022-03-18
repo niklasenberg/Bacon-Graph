@@ -44,7 +44,7 @@ public class Main {
     private void run() throws IOException {
         System.out.println("Welcome! Loading actors and movies...");
         long startTimer = System.nanoTime();
-        graph.readFile("moviedata.txt");
+        graph.readFile("filename.txt"); //file path goes here!
         long endTimer = System.nanoTime();
         System.out.println("Loading complete. Load time: " + TimeUnit.NANOSECONDS.toMillis(endTimer - startTimer) + " milliseconds.");
         System.out.println();
